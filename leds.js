@@ -1,4 +1,5 @@
-$( function() {
-    var $winHeight = $( window ).height()
-    $( '.container' ).height( $winHeight );
-  });
+$(document).ready(function() {
+    $("#lights").click(function() {
+        $("#led").toggleClass("blue-off", !this.checked)
+    }).triggerHandler('click');
+});
